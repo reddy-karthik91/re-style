@@ -1,0 +1,122 @@
+[
+    {
+      "id": 1,
+      "name": "Men's Classic Leather Jacket",
+      "description": "A timeless leather jacket crafted with premium materials for a sleek and stylish look.",
+      "price": 120.99,
+      "category": "men",
+      "image": "https://source.unsplash.com/featured/?leather,jacket,men",
+      "isFeatured": true,
+      "stock": 15
+    },
+    {
+      "id": 2,
+      "name": "Men's Slim Fit Jeans",
+      "description": "Durable and comfortable slim-fit jeans perfect for casual and semi-formal occasions.",
+      "price": 49.99,
+      "category": "men",
+      "image": "https://source.unsplash.com/featured/?jeans,men",
+      "isFeatured": false,
+      "stock": 25
+    },
+    {
+      "id": 3,
+      "name": "Men's Running Shoes",
+      "description": "Lightweight and breathable running shoes designed for maximum performance and comfort.",
+      "price": 89.99,
+      "category": "men",
+      "image": "https://source.unsplash.com/featured/?running,shoes,men",
+      "isFeatured": true,
+      "stock": 20
+    },
+    {
+      "id": 4,
+      "name": "Men's Formal Shirt",
+      "description": "A premium cotton formal shirt tailored for a sharp and professional appearance.",
+      "price": 39.99,
+      "category": "men",
+      "image": "https://source.unsplash.com/featured/?formal,shirt,men",
+      "isFeatured": false,
+      "stock": 30
+    },
+    {
+      "id": 5,
+      "name": "Women's Summer Dress",
+      "description": "A vibrant and flowy summer dress perfect for sunny days and casual outings.",
+      "price": 59.99,
+      "category": "women",
+      "image": "https://source.unsplash.com/featured/?summer,dress,women",
+      "isFeatured": true,
+      "stock": 10
+    },
+    {
+      "id": 6,
+      "name": "Women's High Heels",
+      "description": "Elegant and comfortable high heels designed to elevate your style for any occasion.",
+      "price": 79.99,
+      "category": "women",
+      "image": "https://source.unsplash.com/featured/?high,heels,women",
+      "isFeatured": false,
+      "stock": 18
+    },
+    {
+      "id": 7,
+      "name": "Women's Handbag",
+      "description": "A stylish and spacious handbag made with premium materials for everyday use.",
+      "price": 99.99,
+      "category": "women",
+      "image": "https://source.unsplash.com/featured/?handbag,women",
+      "isFeatured": true,
+      "stock": 12
+    },
+    {
+      "id": 8,
+      "name": "Women's Yoga Pants",
+      "description": "Comfortable and flexible yoga pants designed for active lifestyles and relaxation.",
+      "price": 34.99,
+      "category": "women",
+      "image": "https://source.unsplash.com/featured/?yoga,pants,women",
+      "isFeatured": false,
+      "stock": 22
+    },
+    {
+      "id": 9,
+      "name": "Kids' Graphic T-Shirt",
+      "description": "A fun and colorful graphic t-shirt made with soft and breathable fabric for kids.",
+      "price": 19.99,
+      "category": "kids",
+      "image": "https://source.unsplash.com/featured/?kids,tshirt",
+      "isFeatured": true,
+      "stock": 40
+    },
+    {
+      "id": 10,
+      "name": "Kids' Sneakers",
+      "description": "Durable and stylish sneakers designed for active kids on the go.",
+      "price": 29.99,
+      "category": "kids",
+      "image": "https://source.unsplash.com/featured/?kids,sneakers",
+      "isFeatured": false,
+      "stock": 35
+    },
+    {
+      "id": 11,
+      "name": "Kids' Winter Jacket",
+      "description": "A warm and cozy winter jacket to keep kids comfortable during chilly weather.",
+      "price": 49.99,
+      "category": "kids",
+      "image": "https://source.unsplash.com/featured/?kids,winter,jacket",
+      "isFeatured": true,
+      "stock": 15
+    },
+    {
+      "id": 12,
+      "name": "Kids' Denim Shorts",
+      "description": "Trendy and durable denim shorts perfect for casual wear and outdoor play.",
+      "price": 24.99,
+      "category": "kids",
+      "image": "https://source.unsplash.com/featured/?kids,denim,shorts",
+      "isFeatured": false,
+      "stock": 28
+    }
+  ]
