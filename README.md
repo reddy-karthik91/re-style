@@ -3,7 +3,7 @@
 RE-STYLE is a modern, public-facing e-commerce showcase built with **Next.js 16/19**, **TypeScript**, and **Tailwind CSS**. The project focuses on high performance, technical SEO, and modern AI-assisted development practices.
 
 ## Live Demo
-[[Link to your Vercel Deployment](https://re-style-nu.vercel.app/)]
+[(https://re-style-nu.vercel.app/)]
 
 ## Tech Stack
 - **Framework:** Next.js (App Router)
