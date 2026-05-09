@@ -1,4 +1,4 @@
-"use client"; // Required for useState
+"use client";
 
 import { useState } from "react";
 import Link from "next/link";
@@ -7,10 +7,11 @@ import { cn } from "@/lib/utils";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  // Updated hrefs to use the query parameter strategy
   const navLinks = [
-    { name: "Men", href: "/category/men" },
-    { name: "Women", href: "/category/women" },
-    { name: "Kids", href: "/category/kids" },
+    { name: "Men", href: "/products?category=men" },
+    { name: "Women", href: "/products?category=women" },
+    { name: "Kids", href: "/products?category=kids" },
   ];
 
   return (
@@ -36,6 +37,15 @@ const Navbar = () => {
               </Link>
             </li>
           ))}
+          {/* Added a "Shop All" link for better UX */}
+          <li>
+            <Link
+              href="/products"
+              className="text-gray-400 hover:text-black transition-colors"
+            >
+              All
+            </Link>
+          </li>
         </ul>
 
         {/* Mobile Menu Button */}
@@ -72,7 +82,7 @@ const Navbar = () => {
               <Link
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-lg font-medium text-gray-700 hover:text-black"
+                className="text-lg font-medium text-gray-700 hover:text-black uppercase tracking-widest"
               >
                 {link.name}
               </Link>

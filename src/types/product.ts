@@ -1,7 +1,7 @@
 export type Category = "men" | "women" | "kids";
 
 export interface Product {
-  id: number;
+  id: string;
   name: string;
   description: string;
   price: number;
