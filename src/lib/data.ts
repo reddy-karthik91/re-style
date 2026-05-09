@@ -21,7 +21,7 @@ export const fetchProducts = async (): Promise<Product[]> => {
  * @param {number} id - The ID of the product to fetch.
  * @returns {Promise<Product | null>} A promise that resolves to the product or null if not found.
  */
-export const fetchProductById = async (id: number): Promise<Product | null> => {
+export const fetchProductById = async (id: string): Promise<Product | null> => {
   const allProducts = await fetchProducts();
   return allProducts.find((product) => product.id === id) || null;
 };

@@ -3,30 +3,31 @@ import { twMerge } from "tailwind-merge";
 
 /**
  * Merges Tailwind classes and handles conditional logic safely.
- * Usage: cn('text-red-500', isSelected && 'bg-blue-100')
  */
 export function cn(...inputs: ClassValue[]) {
-    return twMerge(clsx(inputs));
-  }
-  
-  /**
-   * Formats numbers into a currency string (USD for fashion).
-   */
-  export function formatPrice(
-    price: number | string,
-    options: {
-      currency?: 'USD' | 'EUR' | 'INR';
-      notation?: Intl.NumberFormatOptions['notation'];
-    } = {}
-  ) {
-    const { currency = 'USD', notation = 'standard' } = options;
-  
-    const numericPrice = typeof price === 'string' ? parseFloat(price) : price;
-  
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency,
-      notation,
-      maximumFractionDigits: 2,
-    }).format(numericPrice);
-  }
+  return twMerge(clsx(inputs));
+}
+
+/**
+ * Formats numbers into a currency string (Localized for India).
+ */
+export function formatPrice(
+  price: number | string,
+  options: {
+    currency?: "INR" | "USD" | "EUR";
+    notation?: Intl.NumberFormatOptions["notation"];
+  } = {}
+) {
+  // Default to INR and standard notation
+  const { currency = "INR", notation = "standard" } = options;
+
+  const numericPrice = typeof price === "string" ? parseFloat(price) : price;
+
+  return new Intl.NumberFormat("en-IN", {
+    style: "currency",
+    currency,
+    notation,
+    // Setting to 0 for a cleaner look (e.g., ₹2,499 instead of ₹2,499.00)
+    maximumFractionDigits: 0, 
+  }).format(numericPrice);
+}

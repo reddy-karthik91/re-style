@@ -13,7 +13,7 @@ RE-STYLE is a modern, public-facing e-commerce showcase built with **Next.js 16/
 - **Data:** Simulated Server-Side fetching from local JSON
 - **Optimization:** React Compiler (Auto-memoization enabled)
 
-## AI-Assisted Development (Interview Evaluation)
+## AI-Assisted Development
 This project utilizes a "Senior-First" AI workflow. AI was not used to write basic logic, but rather to act as a productivity multiplier for:
 - **Architectural Scaffolding:** Configured `AGENTS.md` to ensure AI agents followed strict Next.js Server Component patterns.
 - **Data Engineering:** Automated the generation of type-safe mock data for 12+ fashion products.
@@ -38,7 +38,7 @@ This project utilizes a "Senior-First" AI workflow. AI was not used to write bas
 ## ⚙️ Development Setup
 **Clone the repository:**
    ```bash
-   git clone [your-repo-link]
+   git clone [https://github.com/reddy-karthik91/re-style.git]
 
 ## Install Dependencies
 npm install
