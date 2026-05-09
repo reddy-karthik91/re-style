@@ -3,6 +3,9 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import { CartProvider } from "@/context/CartContext";
+import CartDrawer from "@/components/cart/CartDrawer";
+import { AuthProvider } from "@/context/AuthContext";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,8 +43,14 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col bg-white text-slate-900">
+        <AuthProvider>
+        <CartProvider>
         {/* Navigation remains fixed/sticky as defined in component */}
         <Navbar />
+
+        {/* CartDrawer is now globally accessible and will 
+        render conditionally based on context state */}
+        <CartDrawer />
 
         {/* 
             Main content wrapper 
@@ -52,6 +61,8 @@ export default function RootLayout({
         </main>
 
         <Footer />
+        </CartProvider>
+        </AuthProvider>
       </body>
     </html>
   );
