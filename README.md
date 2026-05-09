@@ -3,7 +3,7 @@
 RE-STYLE is a modern, public-facing e-commerce showcase built with **Next.js 16/19**, **TypeScript**, and **Tailwind CSS**. The project focuses on high performance, technical SEO, and modern AI-assisted development practices.
 
 ## Live Demo
-[Link to your Vercel Deployment]
+[[Link to your Vercel Deployment](https://re-style-nu.vercel.app/)]
 
 ## Tech Stack
 - **Framework:** Next.js (App Router)
@@ -35,10 +35,26 @@ This project utilizes a "Senior-First" AI workflow. AI was not used to write bas
 - `src/lib`: Data fetching utilities and helper functions.
 - `src/types`: Centralized TypeScript interfaces.
 
+
+src/
+├── app/            # App Router (Pages, Layouts, Metadata)
+├── components/     # Atomic Design Components
+│   ├── product/    # ProductCard, Grids, Filters
+│   ├── cart/       # Shopping Bag
+│   └── about/         # Contact Section
+    └── layout/        # Navigation System (Footer, Navbar, Hero)
+├── context/        # Global State Management
+├── data/           # Mock Data or Static JSON
+├── lib/            # Utilities (Price formatting, cn helper)
+├── types/          # TypeScript Interfaces
+
+
+
 ## ⚙️ Development Setup
 **Clone the repository:**
    ```bash
    git clone [https://github.com/reddy-karthik91/re-style.git]
+   cd re-style
 
 ## Install Dependencies
 npm install
