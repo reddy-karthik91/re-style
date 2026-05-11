@@ -5,6 +5,9 @@ RE-STYLE is a modern, public-facing e-commerce showcase built with **Next.js 16/
 ## Live Demo
 [(https://re-style-nu.vercel.app/)]
 
+## Prompt log
+[(https://drive.google.com/file/d/1a4YyFY7tc0VDet42jiE4KhT1-NAZ-5nE/view?usp=drive_link)]
+
 ## Tech Stack
 - **Framework:** Next.js (App Router)
 - **Language:** TypeScript (Strict Mode)
